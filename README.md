@@ -29,3 +29,7 @@ This project allows users to view and update personal information stored in a lo
 1. Clone the repo:
    ```bash
    git clone https://github.com/your-username/personal-data-dashboard.git
+
+```bash
+cd personal-data-dashboard
+
