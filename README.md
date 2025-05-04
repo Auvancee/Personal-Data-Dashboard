@@ -3,6 +3,7 @@
 A responsive and interactive data dashboard built with HTML, CSS, JavaScript, and Node.js (Express).  
 This project allows users to view and update personal information stored in a local JSON file via a clean and modern web interface.
 
+
 ## 🚀 Features
 
 ✦ View and edit structured personal data (name, favorite games, number of cars)  
@@ -22,7 +23,8 @@ This project allows users to view and update personal information stored in a lo
 
 ## 📸 Preview
 
-![dashboard-preview](preview.png) <!-- optional if you want to include screenshots -->
+![image](https://github.com/user-attachments/assets/e7f7a06d-a63f-4df8-b056-8a40d6f26d82)
+
 
 ## 🛠️ How to Run It Locally
 1. Clone the repository
@@ -40,4 +42,28 @@ npm install
 4. Start the Express backend server
 ```bash
 npm start
+```
+
+
+# 🗃️ Alternate Usage: Node-Only JSON Database Tool
+This project also includes a minimal Node.js setup for working directly with the JSON database without a browser interface.
+It’s useful for testing or running simple scripts to interact with the JSON data from the command line.
+
+### 📁 Files Involved
+✦ db.json: Acts as a local key-value store for persistent data <br>
+✦ db_functions.js: Exposes readDb() and writeDb() to read/write JSON from/to db.json using the Node.js fs module <br>
+✦ index.js: A sample script showing how to use these utilities to create, modify, or inspect JSON data in a Node-only context <br>
+
+### 🧪 How to Run It
+1. Open a terminal in the project folder <br>
+2. Un-comment the desired block of code in index.js (e.g., create new data, update existing values, or print current data) <br>
+3. Run the script using Node:
+```bash
+node index.js
+```
+### 📌 Example Use Case
+```bash
+  const savedData = readDb(); 
+  savedData.NumberOfCars = 50; 
+  writeDb(savedData); 
 ```
